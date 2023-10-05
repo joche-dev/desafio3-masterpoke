@@ -9,10 +9,10 @@ export default function Navbar() {
       </span>
       <ul>
         <li>
-            <NavLink className={({isActive})=> isActive? 'active' : undefined } to={"/"}>Home</NavLink>
+            <NavLink className={({isActive})=> isActive? 'active' : undefined } to={"/desafio3-masterpoke/"}>Home</NavLink>
         </li>
         <li>
-            <NavLink className={({isActive})=> isActive? 'active' : undefined } to={"/pokemones"}>Pokemones</NavLink>
+            <NavLink className={({isActive})=> isActive? 'active' : undefined } to={"/desafio3-masterpoke/pokemones"}>Pokemones</NavLink>
         </li>
       </ul>
     </nav>

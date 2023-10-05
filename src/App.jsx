@@ -11,9 +11,9 @@ function App() {
       <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/pokemones" element={<Pokemones />} />
-        <Route path="/pokemones/:namePokemon" element={<Pokemon />} />
+        <Route path="/desafio3-masterpoke/" element={<Home />} />
+        <Route path="/desafio3-masterpoke/pokemones" element={<Pokemones />} />
+        <Route path="/desafio3-masterpoke/pokemones/:namePokemon" element={<Pokemon />} />
       </Routes>
       </BrowserRouter>
     </>

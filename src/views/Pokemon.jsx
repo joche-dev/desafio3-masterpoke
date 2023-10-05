@@ -6,7 +6,7 @@ export default function Pokemon() {
   const navigate = useNavigate();
 
   const volver = () => {
-    navigate('/pokemones');
+    navigate('/desafio3-masterpoke/pokemones');
   };
 
   return (

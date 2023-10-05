@@ -8,8 +8,8 @@ export default function Pokemones() {
 
   const verDetallePokemon = () => {
     !namePokemon
-      ? navigate('/pokemones')
-      : navigate(`/pokemones/${namePokemon}`);
+      ? navigate('/desafio3-masterpoke/pokemones')
+      : navigate(`/desafio3-masterpoke/pokemones/${namePokemon}`);
   };
 
   useEffect(() => {
