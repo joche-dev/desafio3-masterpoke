@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+  font-weight: 400;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #555;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.active {
+  color: red;
+  pointer-events: none;
+}
+
+main {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+.home {
+  margin-top: 2rem;
+  max-width: 15rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 2rem;
+  border-radius: .5em;
+}
+
+button {
+  width: 100%;
+  padding: 0.7rem 1.5rem;
+  margin-top: 1rem;
+  background-color: #555;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: .5em;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin: 0 auto;
+  border: 1px solid #333;
+  border-radius: .8em;
+  max-width: 25rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+.card img {
+    max-width: 12em;
+}
+
+.card-body h2 {
+  margin-bottom: 0.5rem;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.card ul li:last-child {
+  margin-top: 0.5rem;
+}
+
+.badge {
+  border: 1px solid #333;
+  border-radius: .5em;
+  font-size: 0.8rem;
+  padding: .1em .4em;
+  margin-right: .3em;
+}
+
+@media screen and (min-width: 576px) {
+  nav {
+    padding: 1.5rem 3rem;
+  }
+
+  select {
+    max-width: 20rem;
+  }
+
+  button {
+    width: auto;
+    margin-left: 1em;
+  }
+}
