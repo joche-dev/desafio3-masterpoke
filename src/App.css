@@ -59,6 +59,16 @@ button {
   color: #fff;
   border: 1px solid #333;
   border-radius: .5em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.error {
+  margin-top: 1rem;
+  color: red;
 }
 
 .card {

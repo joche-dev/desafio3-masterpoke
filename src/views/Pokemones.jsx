@@ -3,13 +3,19 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Pokemones() {
   const [namePokemon, setNamePokemon] = useState('');
+  const [error, setError] = useState('');
   const [namesPokemones, setNamesPokemones] = useState([]);
   const navigate = useNavigate();
 
   const verDetallePokemon = () => {
-    !namePokemon
-      ? navigate('/desafio3-masterpoke/pokemones')
-      : navigate(`/desafio3-masterpoke/pokemones/${namePokemon}`);
+    if(!namePokemon){
+        setError('Tienes que seleccionar un pokemón!');
+        navigate('/desafio3-masterpoke/pokemones');
+      }
+    else{
+        setError('');
+        navigate(`/desafio3-masterpoke/pokemones/${namePokemon}`);
+      }
   };
 
   useEffect(() => {
@@ -39,6 +45,7 @@ export default function Pokemones() {
         ))}
       </select>
       <button onClick={verDetallePokemon}>Ver Detalles</button>
+      <p className='error'>{error}</p>
     </main>
   );
 }
